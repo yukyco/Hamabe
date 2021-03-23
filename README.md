@@ -7,4 +7,4 @@ It has been started making website from November.
 https://tipsandtips.xsrv.jp/GridReveal/
 
 候補2
-https://artboxstandard.info/sept2/
+WordPress Themify テーマLanding 他
