@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TOP | SEPT2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css1/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css1/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css1/component.css" />
+	<link rel="stylesheet" type="text/css" href="css1/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/card-4.css" />
+    <link rel="stylesheet" type="text/css" href="css/pattern-4.css" />
+  </head>
+  <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
+
+    <body class="portfolio">
+    <div class="container">
+      <header class="sept2-header">
+          <h1>SEPT.2</h1>
+            <nav class="sept2-menu">
+                <a href="#">Top</a>
+                <a href="#">About</a>    
+                <a href="#">Service</a>
+                <a href="https://tipsandtips.xsrv.jp/About/">Portfolio</a>
+                <a href="#">Access</a>
+                <a href="#">Contact</a>
+            </nav>
+      </header>
+    <!-- END nav -->
+
+			<!--画像-->
+	    <main>
+		</main>
+
+	
+	<footer class="site-footer site-bg-dark site-section">
+        <section class="content content--related">
+            <a class="media-item" href="https://tipsandtips.xsrv.jp/About/">
+               Copyright ©︎ SEPT.2</a>
+            <a class="media-item" href="https://tympanus.net/codrops/2015/06/18/card-expansion-effect-svg-clippath/">
+                Original Menu</a>
+        </section>
+    </footer>
+
+		<script src="js1/imagesloaded.pkgd.min.js"></script>
+		<script src="js1/masonry.pkgd.min.js"></script>
+		<script src="js1/dynamics.min.js"></script>
+		<script src="js1/classie.js"></script>
+		<script src="js1/animOnScroll.js"></script>
+		<script src="js1/main.js"></script>
+		<script>
+		(function() {
+			function getRandomInt(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+			[].slice.call(document.querySelectorAll('.isolayer')).forEach(function(el) {
+				new IsoGrid(el, {
+					type : 'scrollable',
+					transform : 'translateX(-15vw) translateY(275px) rotateX(45deg) rotateZ(45deg)',
+					stackItemsAnimation : {
+						properties : function(pos) {
+							return {
+								translateZ: (pos+1) * 50,
+								rotateZ: getRandomInt(-3, 3)
+							};
+						},
+						options : function(pos, itemstotal) {
+							return {
+								type: dynamics.bezier,
+								duration: 500,
+								points: [{"x":0,"y":0,"cp":[{"x":0.2,"y":1}]},{"x":1,"y":1,"cp":[{"x":0.3,"y":1}]}],
+								//delay: (itemstotal-pos-1)*40
+							};
+						}
+					},
+					onGridLoaded : function() {
+						classie.add(document.body, 'grid-loaded');
+					}
+				});
+			});
+		})();
+		</script>
+	</body>
+</html>
