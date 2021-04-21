@@ -38,8 +38,7 @@ https://shared-assets.adobe.com/link/c004e591-0227-4149-51b3-9beed39eec51
 https://shared-assets.adobe.com/link/27efc6b9-ecaa-4514-44b3-fded4995d587
 
 
-パターン3　(1ページにまとめたデザイン）
-https://shared-assets.adobe.com/link/24e1c161-8f68-4878-5b39-5cd261f32f08
+
 
 
 候補1
